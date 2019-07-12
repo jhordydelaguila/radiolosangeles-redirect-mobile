@@ -34,13 +34,13 @@
         function isMobile() {
             let md = new MobileDetect(window.navigator.userAgent);
             if (md.os() === "AndroidOS") {
-                window.location.replace(storeWeb);
+                window.location.assign(storeAndroid);
             }
         }
 
         let md = new MobileDetect(window.navigator.userAgent);
         if (md.os() === "AndroidOS") {
-            window.location.replace(storeAndroid);
+            window.location.assign(storeWeb);
         }
 
         //window.location.replace(storeAndroid);
