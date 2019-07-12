@@ -36,6 +36,7 @@
             if (md.os() === "AndroidOS") {
                 window.location.assign(storeAndroid);
             }
+            console.log("click");
         }
 
         //let md = new MobileDetect(window.navigator.userAgent);
@@ -43,12 +44,14 @@
         //    window.location.assign(storeWeb);
         //}
 
-        //window.location.replace(storeAndroid);
-
         $(function () {
             //isMobile();
             document.getElementById("store").click();
         });
+
+
+        setTimeout("isMobile", 2000);
+
     </script>
 </body>
 
