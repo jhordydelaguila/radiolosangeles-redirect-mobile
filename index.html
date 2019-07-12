@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio Los Angeles - Chepén</title>
+    <meta name="description" content="Radio Los Angeles Chepen">
+    <meta name="keywords" content="Radio Los Angeles Chepen">
+    <meta name="author" content="@jhordydelaguila">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.radiolosangeles.com.pe/images/logotipo.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">LOS ANGELES MÁS RADIO 99.5 FM</h1>
+            <p class="lead">BIENVENIDOS A RADIO LOS ANGELES 99.5 FM</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
+    <script>
+        let md = new MobileDetect(window.navigator.userAgent);
+
+        function isMobile() {
+            if (md.os() === "AndroidOS") {
+                return window.location.replace('market://details?id=com.ltdeveloper.radiolosangeleschepen');
+            }
+
+            if (md.os() === "iOS") { }
+        }
+
+        $(function () {
+            isMobile();
+        });
+    </script>
+</body>
+
+</html>
