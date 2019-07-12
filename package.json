@@ -1,0 +1,23 @@
+{
+  "name": "radiolosangeles-redirect-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mobile-detect": "^1.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhordydelaguila/radiolosangeles-redirect-mobile.git"
+  },
+  "author": "jhordydelaguila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhordydelaguila/radiolosangeles-redirect-mobile/issues"
+  },
+  "homepage": "https://github.com/jhordydelaguila/radiolosangeles-redirect-mobile#readme"
+}
