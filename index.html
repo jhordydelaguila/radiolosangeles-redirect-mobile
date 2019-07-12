@@ -38,15 +38,16 @@
             }
         }
 
-        let md = new MobileDetect(window.navigator.userAgent);
-        if (md.os() === "AndroidOS") {
-            window.location.assign(storeWeb);
-        }
+        //let md = new MobileDetect(window.navigator.userAgent);
+        //if (md.os() === "AndroidOS") {
+        //    window.location.assign(storeWeb);
+        //}
 
         //window.location.replace(storeAndroid);
 
         $(function () {
             //isMobile();
+            document.getElementById("store").click();
         });
     </script>
 </body>
