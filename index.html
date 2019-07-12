@@ -34,19 +34,11 @@
         function isMobile() {
             let md = new MobileDetect(window.navigator.userAgent);
             if (md.os() === "AndroidOS") {
-                window.location.assign(storeAndroid);
+                window.location.assign(storeWeb);
             }
         }
-
-        //let md = new MobileDetect(window.navigator.userAgent);
-        //if (md.os() === "AndroidOS") {
-        //    window.location.assign(storeWeb);
-        //}
-
         $(function () {
-            //isMobile();
-            //document.getElementById("store").click();
-            window.open('intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end');
+            isMobile();
         });
     </script>
 </body>
