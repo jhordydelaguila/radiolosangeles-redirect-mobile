@@ -20,6 +20,7 @@
         <div class="container">
             <h1 class="display-4">LOS ANGELES MÁS RADIO 99.5 FM</h1>
             <p class="lead">BIENVENIDOS A RADIO LOS ANGELES 99.5 FM</p>
+            <button id="store" class="btn btn-primary" onclick="isMobile()">CLICK FOR OPEN APP</button>
         </div>
     </div>
 
@@ -28,14 +29,15 @@
     <script>
         function isMobile() {
             let md = new MobileDetect(window.navigator.userAgent);
-            let appAndroid = 'market://details?id=com.ltdeveloper.radiolosangeleschepen';
+            let storeAndroid = 'market://details?id=com.ltdeveloper.radiolosangeleschepen';
+            let storeWeb= "https://play.google.com/store/apps/details?id=com.ltdeveloper.radiolosangeleschepen"
             if (md.os() === "AndroidOS") {
-                window.location.replace("market://details?id=com.ltdeveloper.radiolosangeleschepen");
+                window.location.replace(storeWeb);
             }
         }
 
         $(function() {
-            isMobile();
+            //isMobile();
         });
     </script>
 </body>
