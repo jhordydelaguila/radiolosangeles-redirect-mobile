@@ -24,21 +24,28 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
     <script>
-        let storeWeb= "https://play.google.com/store/apps/details?id=com.ltdeveloper.radiolosangeleschepen"
+        let storeWeb = "https://play.google.com/store/apps/details?id=com.ltdeveloper.radiolosangeleschepen"
+        let storeAndroid = 'market://details?id=com.ltdeveloper.radiolosangeleschepen';
         function isMobile() {
             let md = new MobileDetect(window.navigator.userAgent);
-            let storeAndroid = 'market://details?id=com.ltdeveloper.radiolosangeleschepen';
             if (md.os() === "AndroidOS") {
                 window.location.replace(storeWeb);
             }
         }
 
-        window.location.replace(storeWeb);
+        let md = new MobileDetect(window.navigator.userAgent);
+        if (md.os() === "AndroidOS") {
+            window.location.replace(storeAndroid);
+        }
 
-        $(function() {
+        //window.location.replace(storeAndroid);
+
+        $(function () {
             //isMobile();
         });
     </script>
